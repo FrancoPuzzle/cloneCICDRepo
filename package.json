@@ -12,7 +12,7 @@
     "test-detox-android": "detox test -c android.emu.debug"
   },
   "dependencies": {
-    "detox": "^15.1.4",
+    "detox": "^18.2.0",
     "react": "16.9.0",
     "react-native": "0.61.5"
   },
@@ -33,8 +33,7 @@
     "configurations": {
       "android.emu.debug": {
         "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
-        "build":
-        "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
+        "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
         "type": "android.emulator",
         "name": "emu"
       },
